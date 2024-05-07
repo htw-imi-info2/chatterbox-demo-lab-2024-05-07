@@ -7,5 +7,11 @@ public class Node {
     }
     Object data;
     Node next;
-
+    @Override
+    public String toString() {
+        if (next == null)
+            return data.toString();
+        else
+            return data.toString() + next.toString();
+    }
 }
